@@ -392,3 +392,14 @@ exercises.c:82:9: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e3dd9af
+Fri 12 Aug 2022 09:28:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:9: error: unused variable ‘V’ [-Werror=unused-variable]
+   82 |    int *V = calloc(n,sizeof(int));
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+c6d919a
