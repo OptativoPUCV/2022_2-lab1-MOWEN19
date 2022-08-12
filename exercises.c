@@ -61,7 +61,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona *p = {nombre[],rut[],edad};
-  p = *p;
+  Persona p = *p;
    return NULL;
 }
 

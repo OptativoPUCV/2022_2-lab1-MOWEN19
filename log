@@ -229,3 +229,22 @@ exercises.c:64:7: error: incompatible types when assigning to type ‘Persona *�
       |       ^
 Compilation failed
 ebc1913
+Fri 12 Aug 2022 09:18:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:25: error: expected expression before ‘]’ token
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |                         ^
+exercises.c:64:11: error: conflicting types for ‘p’
+   64 |   Persona p = *p;
+      |           ^
+exercises.c:63:13: note: previous definition of ‘p’ was here
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |             ^
+exercises.c:64:15: error: invalid type argument of unary ‘*’ (have ‘Persona’)
+   64 |   Persona p = *p;
+      |               ^~
+Compilation failed
+da060f4
