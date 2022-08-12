@@ -248,3 +248,17 @@ exercises.c:64:15: error: invalid type argument of unary ‘*’ (have ‘Person
       |               ^~
 Compilation failed
 da060f4
+Fri 12 Aug 2022 09:18:31 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:25: error: expected expression before ‘]’ token
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |                         ^
+exercises.c:63:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+df68ea4
