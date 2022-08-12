@@ -18,3 +18,9 @@ exercises.c:40:17: error: expected expression before ‘]’ token
       |                 ^
 Compilation failed
 7c83d11
+Fri 12 Aug 2022 12:56:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+7e2a99e
