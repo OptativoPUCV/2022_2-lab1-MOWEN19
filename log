@@ -95,3 +95,26 @@ exercises.c:63:29: note: (near initialization for ‘a’)
 cc1: all warnings being treated as errors
 Compilation failed
 7aa5fdb
+Fri 12 Aug 2022 01:20:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:18: error: initialization of ‘Persona *’ from incompatible pointer type ‘char *’ [-Werror=incompatible-pointer-types]
+   63 |    Persona *a = {nombre,rut,edad};
+      |                  ^~~~~~
+exercises.c:63:18: note: (near initialization for ‘a’)
+exercises.c:63:25: error: excess elements in scalar initializer [-Werror]
+   63 |    Persona *a = {nombre,rut,edad};
+      |                         ^~~
+exercises.c:63:25: note: (near initialization for ‘a’)
+exercises.c:63:29: error: excess elements in scalar initializer [-Werror]
+   63 |    Persona *a = {nombre,rut,edad};
+      |                             ^~~~
+exercises.c:63:29: note: (near initialization for ‘a’)
+exercises.c:63:13: error: unused variable ‘a’ [-Werror=unused-variable]
+   63 |    Persona *a = {nombre,rut,edad};
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+244d1c8
