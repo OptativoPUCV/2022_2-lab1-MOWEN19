@@ -370,3 +370,14 @@ exercises.c:64:10: error: ‘strcpy’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 e0c6a52
+Fri 12 Aug 2022 09:28:02 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:10: error: unused variable ‘V’ [-Werror=unused-variable]
+   82 |    int * V = calloc(n,sizeof(int));
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+9223553
