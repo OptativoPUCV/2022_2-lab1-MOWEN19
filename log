@@ -262,3 +262,111 @@ exercises.c:63:13: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 df68ea4
+Fri 12 Aug 2022 09:27:49 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:25: error: expected expression before ‘]’ token
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |                         ^
+exercises.c: In function ‘strcpy’:
+exercises.c:65:4: error: expected declaration specifiers before ‘return’
+   65 |    return NULL;
+      |    ^~~~~~
+exercises.c:66:1: error: expected declaration specifiers before ‘}’ token
+   66 | }
+      | ^
+exercises.c:79:3: error: storage class specified for parameter ‘Vector’
+   79 | } Vector;
+      |   ^~~~~~
+exercises.c:81:1: error: expected declaration specifiers before ‘Vector’
+   81 | Vector * crearVector(int n) {
+      | ^~~~~~
+exercises.c:91:19: error: expected declaration specifiers or ‘...’ before ‘Vector’
+   91 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ^~~~~~
+exercises.c:100:18: error: expected declaration specifiers or ‘...’ before ‘Vector’
+  100 | int obtenerValor(Vector * v, int i) {
+      |                  ^~~~~~
+exercises.c:109:12: error: expected declaration specifiers or ‘...’ before ‘Vector’
+  109 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ^~~~~~
+exercises.c:109:24: error: expected declaration specifiers or ‘...’ before ‘Vector’
+  109 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ^~~~~~
+exercises.c:109:36: error: expected declaration specifiers or ‘...’ before ‘Vector’
+  109 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ^~~~~~
+exercises.c:118:45: error: expected declaration specifiers or ‘...’ before ‘Vector’
+  118 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
+      |                                             ^~~~~~
+test.c:9:1: error: parameter ‘test_id’ is initialized
+    9 | int test_id = -1;
+      | ^~~
+test.c:12:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   12 | int success(){
+      |              ^
+test.c:17:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   17 | void err_msg(char* msg){
+      |                        ^
+test.c:24:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   24 | void ok_msg(char* msg){
+      |                       ^
+test.c:30:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   30 | void info_msg(char* msg){
+      |                         ^
+test.c:35:75: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   35 | int test_suite(int(*test)(), char* msg, int max_score, int id, int req_id){
+      |                                                                           ^
+test.c:51:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   51 | int test_suma(){
+      |                ^
+test.c:72:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   72 | int test_suma_n(){
+      |                  ^
+test.c:104:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  104 | int test_creaP(){
+      |                 ^
+test.c:129:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  129 | int test_creaV(){
+      |                 ^
+test.c:153:31: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  153 | int test_asignarObtenerValor(){
+      |                               ^
+test.c:184:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  184 | int test_sumaV(){
+      |                 ^
+test.c:224:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  224 | int test_sumaV2(){
+      |                  ^
+test.c:244:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  244 | int main( int argc, char *argv[] ) {
+      |                                    ^
+In file included from test.c:5:
+exercises.c:64:10: error: old-style parameter declarations in prototyped function definition
+   64 |    char *strcpy(char *dest, const char *src)
+      |          ^~~~~~
+test.c:266: error: expected ‘{’ at end of input
+  266 | }
+      | 
+test.c:266:1: error: no return statement in function returning non-void [-Werror=return-type]
+  266 | }
+      | ^
+test.c: In function ‘crearPersona’:
+test.c:266:1: error: expected declaration or statement at end of input
+In file included from test.c:5:
+exercises.c:63:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |             ^
+test.c:266: error: control reaches end of non-void function [-Werror=return-type]
+  266 | }
+      | 
+In file included from test.c:5:
+At top level:
+exercises.c:64:10: error: ‘strcpy’ defined but not used [-Werror=unused-function]
+   64 |    char *strcpy(char *dest, const char *src)
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e0c6a52
