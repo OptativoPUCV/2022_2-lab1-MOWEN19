@@ -8,3 +8,13 @@ Fri 12 Aug 2022 12:48:56 PM UTC:
  tests:  1|6
 total_score: 10/70
 100c8a9
+Fri 12 Aug 2022 12:55:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:17: error: expected expression before ‘]’ token
+   40 | *suma = sumaN(a[], m);
+      |                 ^
+Compilation failed
+7c83d11
