@@ -216,3 +216,16 @@ exercises.c:63:13: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ce77b84
+Fri 12 Aug 2022 09:18:09 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:25: error: expected expression before ‘]’ token
+   63 |    Persona *p = {nombre[],rut[],edad};
+      |                         ^
+exercises.c:64:7: error: incompatible types when assigning to type ‘Persona *’ from type ‘Persona’
+   64 |   p = *p;
+      |       ^
+Compilation failed
+ebc1913
