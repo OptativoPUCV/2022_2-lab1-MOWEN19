@@ -1239,3 +1239,18 @@ exercises.c:63:31: error: ‘persona’ undeclared (first use in this function);
 exercises.c:63:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 576f623
+Sat 13 Aug 2022 10:56:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:31: error: ‘persona’ undeclared (first use in this function); did you mean ‘Persona’?
+   63 |    Persona *p = malloc(sizeof(persona*));
+      |                               ^~~~~~~
+      |                               Persona
+exercises.c:63:31: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:63:39: error: expected expression before ‘)’ token
+   63 |    Persona *p = malloc(sizeof(persona*));
+      |                                       ^
+Compilation failed
+f5fe03a
