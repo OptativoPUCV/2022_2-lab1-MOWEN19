@@ -1071,3 +1071,50 @@ exercises.c:69:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 3b1c55a
+Sat 13 Aug 2022 10:55:11 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:31: error: ‘persona’ undeclared (first use in this function); did you mean ‘Persona’?
+   63 |    Persona *p = malloc(sizeof(persona));
+      |                               ^~~~~~~
+      |                               Persona
+exercises.c:63:31: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:64:14: error: expected expression before ‘char’
+   64 |     *strcpy( char *p->nombre, *nombre);;
+      |              ^~~~
+exercises.c:64:6: error: too few arguments to function ‘strcpy’
+   64 |     *strcpy( char *p->nombre, *nombre);;
+      |      ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:65:14: error: expected expression before ‘char’
+   65 |     *strcpy( char *p->rut, *rut);;
+      |              ^~~~
+exercises.c:65:6: error: too few arguments to function ‘strcpy’
+   65 |     *strcpy( char *p->rut, *rut);;
+      |      ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:68:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   68 |   return *p;
+      |          ^~
+exercises.c:69:1: error: control reaches end of non-void function [-Werror=return-type]
+   69 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e74d76c
