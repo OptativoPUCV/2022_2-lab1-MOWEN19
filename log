@@ -581,3 +581,32 @@ exercises.c:68:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 f2d8fc8
+Sat 13 Aug 2022 10:23:47 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:5: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   64 |    p.nombre = nombre[];
+      |     ^
+      |     ->
+exercises.c:64:22: error: expected expression before ‘]’ token
+   64 |    p.nombre = nombre[];
+      |                      ^
+exercises.c:65:5: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   65 |    p.rut = rut[];
+      |     ^
+      |     ->
+exercises.c:65:16: error: expected expression before ‘]’ token
+   65 |    p.rut = rut[];
+      |                ^
+exercises.c:66:5: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   66 |    p.edad = edad;
+      |     ^
+      |     ->
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   95 |   *v[i] = valor;
+      |   ^~~~~
+Compilation failed
+a4d3b90
