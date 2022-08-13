@@ -610,3 +610,20 @@ exercises.c:95:3: error: invalid type argument of unary ‘*’ (have ‘Vector�
       |   ^~~~~
 Compilation failed
 a4d3b90
+Sat 13 Aug 2022 10:24:04 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:23: error: expected expression before ‘]’ token
+   64 |    p->nombre = nombre[];
+      |                       ^
+exercises.c:65:17: error: expected expression before ‘]’ token
+   65 |    p->rut = rut[];
+      |                 ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   95 |   *v[i] = valor;
+      |   ^~~~~
+Compilation failed
+b5ae8b0
