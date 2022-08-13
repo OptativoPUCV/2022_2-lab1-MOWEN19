@@ -834,3 +834,23 @@ exercises.c:69:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 3229abc
+Sat 13 Aug 2022 10:37:32 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:23: error: expected expression before ‘]’ token
+   64 |    p->nombre = nombre[];
+      |                       ^
+exercises.c:65:17: error: expected expression before ‘]’ token
+   65 |    p->rut = rut[];
+      |                 ^
+exercises.c:68:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   68 |   return *p;
+      |          ^~
+exercises.c:69:1: error: control reaches end of non-void function [-Werror=return-type]
+   69 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e6d679e
