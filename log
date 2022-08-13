@@ -549,3 +549,35 @@ exercises.c:65:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 821d860
+Sat 13 Aug 2022 10:21:56 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+   63 |    Persona p.nombre = nombre[];
+      |             ^
+exercises.c:63:13: error: expected expression before ‘.’ token
+exercises.c:64:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+   64 |    Persona p.rut = rut[];
+      |             ^
+exercises.c:64:13: error: expected expression before ‘.’ token
+exercises.c:65:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+   65 |    Persona p.edad = edad;
+      |             ^
+exercises.c:65:13: error: expected expression before ‘.’ token
+exercises.c:67:10: error: ‘p’ undeclared (first use in this function)
+   67 |   return p;
+      |          ^
+exercises.c:67:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   94 |   *v[i] = valor;
+      |   ^~~~~
+exercises.c: In function ‘crearPersona’:
+exercises.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f2d8fc8
