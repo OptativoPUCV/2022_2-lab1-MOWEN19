@@ -453,3 +453,30 @@ exercises.c:92:3: error: invalid type argument of unary ‘*’ (have ‘Vector�
       |   ^~~~~
 Compilation failed
 bd602a4
+Sat 13 Aug 2022 10:16:34 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:18: error: initialization of ‘Persona *’ from ‘char’ makes pointer from integer without a cast [-Werror=int-conversion]
+   63 |    Persona *p = {nombre[30],rut[11],edad};
+      |                  ^~~~~~
+exercises.c:63:18: note: (near initialization for ‘p’)
+exercises.c:63:29: error: excess elements in scalar initializer [-Werror]
+   63 |    Persona *p = {nombre[30],rut[11],edad};
+      |                             ^~~
+exercises.c:63:29: note: (near initialization for ‘p’)
+exercises.c:63:37: error: excess elements in scalar initializer [-Werror]
+   63 |    Persona *p = {nombre[30],rut[11],edad};
+      |                                     ^~~~
+exercises.c:63:37: note: (near initialization for ‘p’)
+exercises.c:63:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   63 |    Persona *p = {nombre[30],rut[11],edad};
+      |             ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:91:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   91 |   *v[i] = valor;
+      |   ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c0e2f79
