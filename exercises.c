@@ -61,9 +61,9 @@ typedef struct {
 
 Persona* crearPersona(char nom[], char ru[], int ed) {
    Persona p;
-   p.nombre = nom;
-   p.rut = ru;
-   p.edad = ed;
+   *p.nombre = nom;
+   *p.rut = ru;
+   *p.edad = ed;
 
   return p;
 }
