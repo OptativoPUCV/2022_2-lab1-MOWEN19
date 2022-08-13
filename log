@@ -480,3 +480,26 @@ exercises.c:91:3: error: invalid type argument of unary ‘*’ (have ‘Vector�
 cc1: all warnings being treated as errors
 Compilation failed
 c0e2f79
+Sat 13 Aug 2022 10:17:32 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:16: error: missing braces around initializer [-Werror=missing-braces]
+   63 |    Persona p = {nombre[30],rut[11],edad};
+      |                ^
+      |                 {                      }
+exercises.c:64:11: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   64 |    return p;
+      |           ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:91:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   91 |   *v[i] = valor;
+      |   ^~~~~
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3d664b7
