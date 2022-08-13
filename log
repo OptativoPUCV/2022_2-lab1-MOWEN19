@@ -867,3 +867,16 @@ exercises.c:65:11: error: assignment to expression with array type
       |           ^
 Compilation failed
 ae6d974
+Sat 13 Aug 2022 10:39:37 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:23: error: expected expression before ‘]’ token
+   64 |    p->nombre = nombre[];
+      |                       ^
+exercises.c:65:17: error: expected expression before ‘]’ token
+   65 |    p->rut = rut[];
+      |                 ^
+Compilation failed
+f44c3c3
