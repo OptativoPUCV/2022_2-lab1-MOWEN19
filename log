@@ -1731,3 +1731,17 @@ exercises.c:106:7: error: unused variable ‘valor’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 90a555b
+Sun 14 Aug 2022 09:15:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:15: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  106 |   int valor = v[i].datos;
+      |               ^
+exercises.c:106:7: error: unused variable ‘valor’ [-Werror=unused-variable]
+  106 |   int valor = v[i].datos;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7e87ba8
