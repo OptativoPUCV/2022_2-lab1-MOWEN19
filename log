@@ -1391,3 +1391,22 @@ exercises.c:107:19: error: invalid type argument of ‘->’ (have ‘Vector’)
       |                   ^~
 Compilation failed
 edfef6d
+Sun 14 Aug 2022 01:27:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:89:11: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   89 |    return V;
+      |           ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:98:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+   98 |   v[i]->datos = valor;
+      |       ^~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:19: error: invalid type argument of ‘->’ (have ‘Vector’)
+  107 |   int valor = v[i]->datos;
+      |                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2b08ddb
