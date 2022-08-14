@@ -1720,3 +1720,14 @@ Sun 14 Aug 2022 05:08:39 PM UTC:
  tests:  4|3
 total_score: 40/70
 956e421
+Sun 14 Aug 2022 05:24:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:7: error: unused variable ‘valor’ [-Werror=unused-variable]
+  106 |   int valor = *v[i].datos;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+90a555b
