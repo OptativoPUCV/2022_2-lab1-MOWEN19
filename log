@@ -1514,3 +1514,13 @@ exercises.c:106:7: error: unused variable ‘valor’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8b73b90
+Sun 14 Aug 2022 04:13:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:19: error: invalid type argument of ‘->’ (have ‘Vector’)
+  106 |   int valor = v[i]->datos;
+      |                   ^~
+Compilation failed
+e56bb76
