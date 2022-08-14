@@ -1301,3 +1301,13 @@ Sun 14 Aug 2022 04:13:01 AM UTC:
  tests:  3|4
 total_score: 30/70
 47c4aea
+Sun 14 Aug 2022 04:22:30 AM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:13: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   87 |      V[i] = 0;
+      |             ^
+Compilation failed
+a86b7f6
