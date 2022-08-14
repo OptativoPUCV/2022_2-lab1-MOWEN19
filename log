@@ -1624,3 +1624,17 @@ exercises.c:97:19: error: invalid type argument of ‘->’ (have ‘Vector’)
       |                   ^~
 Compilation failed
 c389870
+Sun 14 Aug 2022 04:24:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Werror=format=]
+   97 |   printf("%d",v[i].datos);
+      |           ~^  ~~~~~~~~~~
+      |            |      |
+      |            int    int *
+      |           %ls
+cc1: all warnings being treated as errors
+Compilation failed
+b3f242f
