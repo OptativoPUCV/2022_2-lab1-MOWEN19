@@ -1666,3 +1666,13 @@ exercises.c:97:6: error: invalid type argument of ‘->’ (have ‘Vector’)
       |      ^~
 Compilation failed
 8c955c9
+Sun 14 Aug 2022 04:33:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+   97 |  *v[0]->datos[i] = valor;
+      |       ^~
+Compilation failed
+63adad1
