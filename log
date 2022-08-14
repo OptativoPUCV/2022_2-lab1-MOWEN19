@@ -1578,3 +1578,13 @@ exercises.c:97:14: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 55b4771
+Sun 14 Aug 2022 04:21:05 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:8: error: invalid type argument of ‘->’ (have ‘Vector’)
+   97 |   &v[i]->datos = valor;
+      |        ^~
+Compilation failed
+a01b0a9
