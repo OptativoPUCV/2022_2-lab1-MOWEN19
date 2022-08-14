@@ -1363,3 +1363,17 @@ exercises.c:107:15: error: incompatible types when initializing type ‘int’ u
       |               ^
 Compilation failed
 ac94499
+Sun 14 Aug 2022 04:33:19 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:98:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+   98 |   v[i]->datos = valor;
+      |       ^~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: incompatible types when initializing type ‘int’ using type ‘Vector’
+  107 |   int valor = v[i];
+      |               ^
+Compilation failed
+6a15722
