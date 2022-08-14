@@ -1349,3 +1349,17 @@ exercises.c:109:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 db684aa
+Sun 14 Aug 2022 04:27:31 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:98:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   98 |   v[i] = valor;
+      |          ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: incompatible types when initializing type ‘int’ using type ‘Vector’
+  107 |   int valor = v[i];
+      |               ^
+Compilation failed
+ac94499
