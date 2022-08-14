@@ -1762,3 +1762,16 @@ Sun 14 Aug 2022 09:24:27 PM UTC:
  tests:  6|2
 total_score: 50/70
 cb7e6ec
+Sun 14 Aug 2022 09:28:03 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:117:44: error: expected ‘;’ before ‘}’ token
+  117 |     c->datos[i] = a->datos[i] + b->datos[i]
+      |                                            ^
+      |                                            ;
+  118 |   }
+      |   ~                                         
+Compilation failed
+14d1bac
