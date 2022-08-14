@@ -1745,3 +1745,14 @@ exercises.c:106:7: error: unused variable ‘valor’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7e87ba8
+Sun 14 Aug 2022 09:24:19 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:16: error: ‘v’ is a pointer; did you mean to use ‘->’?
+  106 |   int valor = v.datos[i];
+      |                ^
+      |                ->
+Compilation failed
+adef2ac
