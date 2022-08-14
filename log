@@ -1638,3 +1638,9 @@ exercises.c:97:12: error: format ‘%d’ expects argument of type ‘int’, bu
 cc1: all warnings being treated as errors
 Compilation failed
 b3f242f
+Sun 14 Aug 2022 04:25:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+d279f26
