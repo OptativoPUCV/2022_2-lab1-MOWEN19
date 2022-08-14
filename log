@@ -1524,3 +1524,14 @@ exercises.c:106:19: error: invalid type argument of ‘->’ (have ‘Vector’)
       |                   ^~
 Compilation failed
 e56bb76
+Sun 14 Aug 2022 04:13:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:15: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  106 |   int valor = v[i].datos;
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+a78057c
