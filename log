@@ -1331,3 +1331,21 @@ exercises.c:98:10: error: incompatible types when assigning to type ‘Vector’
       |          ^~~~~
 Compilation failed
 12c7a4c
+Sun 14 Aug 2022 04:26:51 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:98:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   98 |   v[i] = valor;
+      |          ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:108:12: error: incompatible types when returning type ‘Vector’ but ‘int’ was expected
+  108 |    return v[i];
+      |           ~^~~
+exercises.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+  109 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+db684aa
